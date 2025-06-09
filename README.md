@@ -32,7 +32,7 @@ There are :
 
     ----------
 
-• all inputs, select and textarea have labels
+• all inputs, select and textarea have labels 
 
 • The inputs, fieldset and button elements take up most of the width of the container (except input type="radio")
 

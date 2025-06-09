@@ -75,9 +75,36 @@ legend {
     margin: 0 auto;
 }
 
-input[type="radio"]:checked {
-    color: green;
+
+input[type="radio"] {
+    appearance: none;
 }
+
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    vertical-align: -16px;
+}
+
+input[type="radio"]::before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    transform: translate(1.4px, 1.4px) scale(0);
+    transform-origin: center;
+    transition: all 0.2s ease-in;
+}
+
+input[type="radio"]:checked::before {
+    transform: translate(1.4px, 1.4px) scale(1) ;
+    transition: all 0.3s cubic-bezier(0.25, 0.25, 0.56, 2);
+    color: green;
+} 
 
 button {
     width: 100%;
