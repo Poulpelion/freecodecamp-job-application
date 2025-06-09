@@ -22,9 +22,14 @@ h1 {
 }
 
 section {
+    width: 80%;
+    max-width: 550px;
+    height: fit-content;
     display: block;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-inline: auto;
     padding: 1rem;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
 }
 

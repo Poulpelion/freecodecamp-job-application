@@ -48,6 +48,6 @@ There are :
 
 • submit button:hover :active background dark blue
 
-• when clicking submit message for unvalid or not compiled input, probably default behavior
+• when clicking submit message for invalid or not compiled input, probably default behavior
 
-• nothing happen when all valid 
+• nothing happens when all valid 
