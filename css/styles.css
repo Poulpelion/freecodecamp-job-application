@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 1rem;
+}
+
+input, select, textarea {
+    font: inherit
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+section {
+    display: block;  
+}
+
+label, input:not([type="radio"]), select, fieldset, textarea {
+    display: inline-block;
+    margin-inline: 1rem;
+    width: 95%;
+}
+
+
+
+input, select, fieldset, textarea {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+fieldset input {
+    margin-right: 0;
+    width: 1;
+    
+}
+
+fieldset label {
+    margin-left: 0.2rem;
+    max-width: 30%;
+}
