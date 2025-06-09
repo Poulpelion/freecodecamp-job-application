@@ -57,13 +57,12 @@ fieldset label {
     max-width: 30%;
 }
 
-:is(input, textarea, select):required:invalid{
-    border: 1px solid red;
+:is(input, select, textarea):focus:active {
+    border: 1px solid black;
 
 }
-
-:is(input, select, textarea):active {
-    border: 1px solid black;
+:is(input, textarea, select):required:invalid{
+    border: 1px solid red;
 
 }
 
