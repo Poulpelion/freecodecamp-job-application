@@ -22,11 +22,11 @@
         <!-- Job position -->
 
         <label for="position">Position:</label>
-        <select id="position" name="position">
+        <select id="position" name="position" required>
             <option value="">Select a position</option>
-            <option value="developer">developer</option>
-            <option value="designer">designer</option>
-            <option value="manager">manager</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
 
         </select>
 
@@ -34,14 +34,17 @@
 
         <fieldset>
             <legend>Availability</legend>
-            <input type="radio" id="full-time" name="availability">
+            <input type="radio" id="full-time" name="availability" checked>
             <label for="full-time">Full-Time</label>
             <input type="radio" id="part-time" name="availability">
             <label for="part-time">Part-Time</label>
         </fieldset>
             <!-- motivation -->
 
-            <label for="motivation">Why do you want this job?</label><textarea name="" id=""></textarea><button></button>
+            <label for="motivation">Why do you want this job?</label>
+            <textarea name="motivation" id="motivation" placeholder="Write your motivation" cols="12" rows="8" required></textarea>
+            
+            <button type="submit">Submit Application</button>
     </form>
 </section>
 </body>

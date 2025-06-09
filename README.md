@@ -42,7 +42,7 @@ There are :
 
 • when focused no style except select and submit, which have default blue outline 
 
-• radio buttons look larger than usual, turn green when selected label turns green too (I need to check I will have to nest input into label -≥ implicit label)
+• radio buttons look larger than usual, turn green when selected label turns green too (I need to check I will have to nest input into label -> implicit label)
 
 • submit button as green background and text is white
 
@@ -50,4 +50,4 @@ There are :
 
 • when clicking submit message for unvalid or not compiled input, probably default behavior
 
-• nothing happen when all valid ``
+• nothing happen when all valid 

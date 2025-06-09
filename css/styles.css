@@ -8,28 +8,36 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    padding: 1rem;
+    padding: 1rem 3rem;
 }
 
-input, select, textarea {
+input, select, textarea, button {
     font: inherit
 }
 
 h1 {
     font-size: 2rem;
+    margin: 2rem auto;
+    text-align: center;
 }
 
 section {
-    display: block;  
+    display: block;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 label, input:not([type="radio"]), select, fieldset, textarea {
     display: inline-block;
-    margin-inline: 1rem;
-    width: 95%;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.2rem;
 }
 
-
+:is(input, textarea)::placeholder {
+    font-size: 0.8rem;
+}
 
 input, select, fieldset, textarea {
     margin-bottom: 1rem;
@@ -40,12 +48,52 @@ label {
 }
 
 fieldset input {
-    margin-right: 0;
+    margin-inline: 0.2rem;
     width: 1;
-    
 }
 
 fieldset label {
     margin-left: 0.2rem;
     max-width: 30%;
+}
+
+:is(input, textarea, select):required:invalid{
+    border: 1px solid red;
+
+}
+
+:is(input, select, textarea):active {
+    border: 1px solid black;
+
+}
+
+:is(input, textarea, select):valid {
+    border: 1px solid forestgreen;
+}
+
+legend {
+    margin: 0 auto;
+}
+
+input[type="radio"]:checked {
+    color: green;
+}
+
+button {
+    width: 100%;
+    margin: 0.7rem auto;
+
+    padding: 0.7rem;
+
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: darkblue;
 }
