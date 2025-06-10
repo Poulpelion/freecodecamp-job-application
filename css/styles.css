@@ -8,7 +8,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    padding: 1rem 3rem;
+    padding: 1rem auto;
 }
 
 input, select, textarea, button {
@@ -19,11 +19,13 @@ h1 {
     font-size: 2rem;
     margin: 2rem auto;
     text-align: center;
+    word-break: break-word;
+
 }
 
 section {
-    width: 80%;
-    min-width: fit-content;
+    width: 90%;
+    /* min-width: fit-content; */
     max-width: 550px;
     height: fit-content;
     display: block;
@@ -63,10 +65,10 @@ fieldset label {
     max-width: 30%;
 }
 
-:is(input, select, textarea):focus {
-    border: none;
-    outline: none;
-    box-shadow: 2px 2px 2px 1px hsl(120, 0%, 40%);
+:is(input:not(type="radio"), select, textarea):focus {
+    border: 1px solid blue;
+    outline: 1px solid hsl(240, 100%, 50%) ;
+    box-shadow: 2px 2px 2px 1px hsla(220, 100%, 70%, 0.679);
 }
 
 :is(input, textarea, select):required:invalid{
@@ -105,6 +107,7 @@ input[type="radio"]::before {
     background-color: green;
     transform: translate(1.4px, 1.4px) scale(0);
     transform-origin: center;
+    box-shadow: 1px 1px 1px gray;
     transition: all 0.2s ease-in;
 }
 
@@ -116,7 +119,11 @@ input[type="radio"]:checked::before {
 
 input[type="radio"]:checked+label {
     color: green;
-}
+    box-shadow: 1px 1px 1px rgb(238, 238, 238);
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+    
+} 
 
 button {
     width: 100%;
