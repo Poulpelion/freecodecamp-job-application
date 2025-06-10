@@ -23,6 +23,7 @@ h1 {
 
 section {
     width: 80%;
+    min-width: fit-content;
     max-width: 550px;
     height: fit-content;
     display: block;
